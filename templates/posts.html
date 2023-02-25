@@ -41,6 +41,12 @@
         </ul>
         {% comment %} {% endif %} {% endcomment %}
     </section>
+
+    <!-- The integrity and crossorigin attributes are used for Subresource Integrity (SRI) checking. 
+    This allows browsers to ensure that resources hosted on third-party servers have not been tampered with.
+     Use of SRI is recommended as a best-practice, 
+     whenever libraries are loaded from a third-party source. Read more at srihash.org 
+    As jquery is an external js library that's why it needs additional js file to be loaded by browser-->
     <script
   src="https://code.jquery.com/jquery-3.6.1.js"
   integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
